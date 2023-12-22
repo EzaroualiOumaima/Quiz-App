@@ -6,19 +6,52 @@
     margin: 0;
     padding: 0;
   }
+ 
   .main{
     height:calc(100vh - 56px);
   } 
   .content{
     background-image:
-    linear-gradient(to right ,#01022de5,#00000088) ,
+    linear-gradient(to right ,#01022de5,transparent) ,
       url(bg-img.jpg) ;
     background-size: cover;
     background-position: center;
     opacity: 0.8;
   }
-  .content:hover{
-    background-image:
-    linear-gradient(to right ,#01022de5,transparent) ,
-    url(bg-img.jpg);
+  
+  .button {
+    background-color: #ffffff00;
+    color:#01022de5 ;
+    width: 8.5em;
+    height: 2.9em;
+    border: #3A7291 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover {
+    background-color:#3A7291 ;
+    cursor: pointer;
+    color: aliceblue;
+  }
+  
+  .button svg {
+    width: 1.6em;
+    margin-left: 2em ;
+    position: absolute;
+    display: flex;
+    transition: all 0.4s ease;
+  }
+  
+  .button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .text {
+    margin: 0 1.5em
+  }
+
+  label , form h2 {
+    color: white; 
   }
